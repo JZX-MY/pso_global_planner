@@ -1,0 +1,5 @@
+<library path="lib/libpso_global_planner">
+  <class name="pso_planner/globalMotionPlannerROS" type="global_motion_planner::globalMotionPlannerROS" base_class_type="nav_core::BaseGlobalPlanner">
+    <description>This is PSO Global Planner Plugin by Jing Zongxin.</description>
+  </class>
+</library>
