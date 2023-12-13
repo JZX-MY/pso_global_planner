@@ -9,4 +9,9 @@
 # pso_global_planner
 This is a ROS Global Planner Plugin that implements the PSO (Particle Swarm Optimization) path planning algorithm.
 
-![demo1.gif](./assets/pso_ros_1.gif)
+<div align="center">
+  <img src="assets/pso_ros_1.gif" alt="demo1.gif">
+</div>
+
+
+
