@@ -65,34 +65,36 @@
 <font size="3">In addition to the method described above, which involves using it as an independent ROS global path planner plugin, we also offer an alternative approach. We have integrated the PSO global path planner into the ROS-based motion planning library, [ros_motion_planning](https://github.com/ai-winter/ros_motion_planning). You can easily utilize it by setting the 'robot1_global_planner' parameter in the ['user_config.yaml'](https://github.com/ai-winter/ros_motion_planning/blob/master/src/user_config/user_config.yaml) file of this motion planning library to 'pso'. An example is provided below:</font> 
 
     ```bash
-   map: "warehouse"
-   world: "warehouse"
-   rviz_file: "sim_env.rviz"
-
-   robots_config:
-     - robot1_type: "turtlebot3_waffle"
-       robot1_global_planner: "pso"      <!-- Set the global path planning algorithm to PSO -->
-       robot1_local_planner: "dwa"
-
-       <!-- Set other parameters -->
-       ...
-       ...
-       ...
-
-   plugins:
-
-        <!-- Set other parameters -->
-        ...
-        ...
-        ...
+    
+       map: "warehouse"
+       world: "warehouse"
+       rviz_file: "sim_env.rviz"
+    
+       robots_config:
+         - robot1_type: "turtlebot3_waffle"
+           robot1_global_planner: "pso"      <!-- Set the global path planning algorithm to PSO -->
+           robot1_local_planner: "dwa"
+    
+           <!-- Set other parameters -->
+           ...
+           ...
+           ...
+    
+       plugins:
+    
+            <!-- Set other parameters -->
+            ...
+            ...
+            ...
+        
     ```
 
 <font size="3">The demonstration of the results is as follows:</font> 
 
 
 <div align="center">
-  <img src="assets/pso_ros_1.gif" alt="demo3.gif" width="300"/> 
-  <img src="assets/pso_fitness.png" alt="pso_fitness.png" width="500"/> 
+  <img src="assets/pso_ros_1.gif" alt="demo3.gif" width="280"/> 
+  <img src="assets/pso_fitness.png" alt="pso_fitness.png" width="520"/> 
 </div>
 
 
